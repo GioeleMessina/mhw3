@@ -1,0 +1,215 @@
+.choice-grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.choice-grid div{
+    margin-bottom: 20px;
+    width: calc(32.5% - 20px);
+    background-color:#f4f4f4;
+    border: 1px solid #dcdcdc;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+
+}
+
+.choice-grid div img{
+    width:100%;
+}
+
+.nonAttiva{
+    opacity: 0.6;
+}
+
+.choice-grid .attiva{
+    background-color:#cfe3ff ;
+
+}
+
+#form{
+    text-align: center;
+
+}
+#personalita{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+#personalita h1{
+    margin: 0;
+}
+
+#personalita p{
+    margin-top:18px;
+    margin-bottom:18px;
+
+
+}
+
+#personalita button{
+    background-color: #cecece;
+    height:50px;
+    font-size: 1em;
+}
+
+button:hover{
+    color:#e0e0e0;
+}
+
+h1{
+    text-align: center;
+    color:midnightblue;
+}
+
+
+form{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+#offerte{
+    display:flex;
+    flex-direction:column;
+}
+
+#offerte div img ,#playlist div img{
+    width:30%;
+    margin:10px;
+    border-radius: 20px ;
+    border:3px solid white;
+
+}
+
+#offerte div p {
+    color:brown;
+    margin:10px;
+
+}
+
+#offerte div,#playlist div{
+    display:flex;
+    align-items: center;
+    background-color: #dcdcdc;
+    margin:3px;
+    border-radius:20px;
+}
+
+
+#offerte div a,#playlist div a{
+    margin:30px;
+}
+
+#offerte a:visited,#playlist a:visited{
+    color:midnightblue;
+}
+
+#offerte a:link,#playlist a:link{
+    color:black;
+}
+
+
+
+#ricerca_playlist,#playlist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ricerca_playlist button,#playlist button{
+    font-size: 1.5em;
+    margin:20px;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+
+#ricerca_playlist button:hover,#playlist button:hover{
+    color:midnightblue;
+}
+
+
+@media(max-width: 700px){
+
+    header div{
+        display:none;
+    }
+
+    article{
+        width: 95%;
+    }
+}
+
+
+@media(max-width:420px){
+    .question-name h1{
+        font-size: 2.9em;
+    }
+
+}
+    
+@media(max-width: 500px){
+    .choice-grid div{
+        width:calc(49% - 20px);
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    #offerte div img {
+        width:55%;
+        border: 2px solid white;
+    
+    }
+
+    #offerte div a, #playlist div a {
+        margin: 10px;
+    }
+    #playlist div img {
+        width:40%;
+        border: 2px solid white;
+    }
+    
+}
+
+
+@media(max-width:360px){
+
+    .question-name h1{
+        font-size: 2em;
+    }
+    #offerte div a, #playlist div a {
+        margin: 0px;
+    }
+    #offerte div p{
+        margin:5px;
+        font-size: 0.9em;
+    }
+
+    #offerte div{
+        font-size: 0.8em;
+    }
+
+    #offerte div img{
+        width:50%;
+        margin:5px;
+    }
+
+    #playlist div img {
+        width:40%;
+        margin:5px;
+    }
+
+    #playlist a:link{
+        font-size: 0.9em;
+    }
+
+    #ricerca_playlist button, #playlist button {
+        font-size: 1.2em;
+    }
+}
